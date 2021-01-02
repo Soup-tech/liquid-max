@@ -35,9 +35,6 @@ async def on_ready():
 
 @bot.event
 async def on_message(message):
-    if (message.content == 'wake up'):
-        await message.channel.send(f'Wake up <@792591005525737492>...')
-
     await bot.process_commands(message)
 
 
